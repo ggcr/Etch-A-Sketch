@@ -4,21 +4,31 @@
         <meta charset="utf-8">
         <title>Etch A Sketch</title>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="scripts.js"></script>
-        <script>
-            calljs();
-        </script>
+        <script type="text/javascript" src="scripts.js"></script>
     </head>
     <body>
         <header>
-            <h1>Etch A Sketch</h1>
-            <button>Reset Grid Size</button>
-            <button>Clear</button>
-            <button>Greyscale</button>
-            <button>RandomColors</button>
+            <div id = "HeaderWrapper">
+
+                <div id = "Title">
+                    <p>Etch A Sketch</p>
+                </div>
+
+                <div id = "Buttons">
+                    <button id = "Reset">Reset Grid Size</button>
+                    <button id = "Clear">Clear</button>
+                    <button id = "Grey">Greyscale</button>
+                    <button id = "Rand">Random Colors</button>
+                </div>
+
+                <div id = "Creator">
+                Created by <a href="https://github.com/1063551/Rock-Paper-Scissors">1063551</a>
+                </div>
+                
+            </div>
         </header>
-        <div id="Creator">
-            <p>Created by 1063551<br>A Star would be appreciated</p>
-        </div>
+
+        <div id = "container"></div>
+
     </body>
 </html>
