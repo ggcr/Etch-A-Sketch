@@ -1,50 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 
 * {
-    margin: 0px;
+    margin: 0 auto;
     border: 0px;
-    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
     text-align: center;
-}
-
-#HeaderWrapper {
-    text-align:center;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 30px;
 }
 
 #Buttons {
-    display: inline-block;
-    margin: 0;
+    margin: 0 auto;
     vertical-align:top;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-left: -18px;
 }
 
-#Title,
-#Creator{
-    display: inline-block;
-    vertical-align:top;
+#Title{
+    margin: auto;
+    margin-top: -10px;
+    text-align: center;
+    font-family: 'Gloria Hallelujah';
+    font-size: 32px;
 }
 
-#Title {
-    width: 35%;
-    font-family: Helvetica, sans-serif;
-    font-size: 50px;
-    margin-right: 20px;
-    margin-top: 15px;
-}
 #Creator {
+    margin-top: -110px;
+    margin-right: 10px;
     float: right;
-    margin-right: -240px;
-    margin-top: -98px;
-    width: 28%;
 }
 
 #Reset {font-size: 20px; padding:12px; font-weight: bold; margin-left: 20px; border-radius: 12px; border: solid 1px; }
@@ -52,20 +44,24 @@ body {
 #Grey {font-size: 20px; padding:12px; font-weight: bold; margin-left: 20px; border-radius: 12px;border: solid 1px;}
 #Rand {font-size: 20px; padding:12px; font-weight: bold; margin-left: 20px; border-radius: 12px;border: solid 1px;}
 
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-  }
-  
-  #container {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-  }
-  
-  .grid-item {
-    padding: 1em;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
+#Grid {
+    margin: auto;
+    margin-top: 30px;
+    display: table;
+    border-collapse: collapse;
+    border: 1px solid black;
+    height: 550px;
+    width: 550px;
+
+}
+
+#row {
+    display:table-row;
+    border-collapse: collapse;
+}
+
+#cell 
+{
+    display: table-cell;
+    border-collapse: collapse;
+}
